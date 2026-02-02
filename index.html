@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Registration</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="energy-bg">
+  <span></span><span></span><span></span>
+</div>
+
+<section class="event-hero" id="home">
+  <h1 class="event-title">EVENT GRAVITY 2K26</h1>
+  <p class="event-desc">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptatibus, consequatur. Repellendus placeat minus dolorum 
+    tempore, ipsum quae explicabo voluptatem. Lorem ipsum dolor sit amet.
+  </p>
+</section>
+
+
+<div class="countdown">
+  <div><span id="days">00</span>Days</div>
+  <div><span id="hours">00</span>Hours</div>
+  <div><span id="minutes">00</span>Min</div>
+  <div><span id="seconds">00</span>Sec</div>
+</div>
+
+
+ <section id="games">
+<h1 class="title">GAMES</h1>
+
+
+<div class="cards-container">
+
+  <div class="card">
+    <h2>BGMI</h2>
+    <ul class="card-details">
+      <li>👥 Squad (4 Players)</li>
+      <li>💰 Entry Fee: ₹200</li>
+      <li>🏆 Prize Pool: ₹10,000</li>
+      <li>📅 Match Date: 21 Feb</li>
+    </ul>
+    <button onclick="openForm('BGMI',4,100)">REGISTER</button>
+  </div>
+
+  <div class="card">
+    <h2>FREE FIRE</h2>
+    <ul class="card-details">
+      <li>👥 Squad (4 Players)</li>
+      <li>💰 Entry Fee: ₹200</li>
+      <li>🏆 Prize Pool: ₹10,000</li>
+      <li>📅 Match Date: 21 Feb</li>
+    </ul>
+    <button onclick="openForm('FREE FIRE',4,80)">REGISTER</button>
+  </div>
+
+  <div class="card">
+    <h2>VALORANT</h2>
+    <ul class="card-details">
+      <li>👥 5v5 (PC)</li>
+      <li>💰 Entry Fee: ₹200</li>
+      <li>🏆 Prize Pool: ₹10,000</li>
+      <li>📅 Match Date: 21 Feb</li>
+    </ul>
+    <button onclick="openForm('VALORANT',5,250)">REGISTER</button>
+  </div>
+</section>
+</div>
+  
+<div class="modal" id="registrationModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeForm()">×</span>
+
+    <h2 id="gameTitle"></h2>
+    <p id="entryFee" class="fee-text"></p>
+
+    <form>
+      <div id="teamFields" class="team-fields"></div>
+
+      <input type="tel" placeholder="Team Leader Contact" required>
+      <input type="email" placeholder="Team Leader Email" required>
+
+      <select required>
+        <option value="">Select Payment Method</option>
+        <option>UPI</option>
+        <option>Google Pay</option>
+        <option>PhonePe</option>
+        <option>Paytm</option>
+      </select>
+
+      <button type="submit" class="submit-btn">SUBMIT</button>
+    </form>
+  </div>
+</div>
+
+<section class="rules-section">
+  <h2>📜 Game Rules</h2>
+  <ul>
+    <li>🚫 No emulator</li>
+    <li>⚖️ Fair play</li>
+    <li>⏰ Reporting time mandatory</li>
+    <li>🪪 ID verification required</li>
+  </ul>
+</section>
+  
+<section class="organizers-section" id="contact">
+  <h2>🎯 Event Organizers</h2>
+  <div class="organizers-container">
+    <div class="organizer-card">Org 1<br>📞 +91 XXXXX XXXXX</div>
+     <div class="organizer-card">Org 2<br>📞 +91 XXXXX XXXXX</div> 
+ <div class="organizer-card">Org 3<br>📞 +91 XXXXX XXXXX</div>
+  </div>
+</section>
+  
+<section class="social-section">
+  <div class="instagram-box">
+    <h3>📸 Follow on Instagram</h3>
+    <p>@your_handle</p>
+    <a href="#" class="insta-btn">Follow</a>
+  </div>
+
+  <div class="newsletter-box">
+    <h3>📩 Newsletter</h3>
+    <form class="newsletter-form">
+      <input type="text" placeholder="Name" required>
+      <input type="tel" placeholder="Contact" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
